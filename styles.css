@@ -1,0 +1,90 @@
+/* сброс отступов */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* размерность родительского блока слайдера */
+main{
+  margin-top: 100px;
+}
+/* слайдер */
+.slider {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 20px;
+  border-style:double;
+  border-color:blue;
+  border-width: 5px;
+  box-shadow: 5px;
+  box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.5);
+
+}
+/* масштабирование картинок по отношению к родительскому элементу */
+.slider .slider_item img {
+  object-fit: cover;
+  width: 100%;
+  height: 290px;
+}
+/* кнопки навигации слайдера */
+.slider_previous, .slider_next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: rgb(70, 11, 235);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.5s ease;
+ background-position: center; 
+ background-repeat: no-repeat;
+ text-align: center;
+ padding: 3px;
+}
+.slider .slider_next {
+  right: 1px;
+  border-radius: 50%;
+
+}
+/* фон кнопки */
+.slider .slider_previous:hover,
+.slider .slider_next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider .slider_item {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+/* прозрачность книпки */
+@keyframes fade {
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+/* размерность информационного интерфейса слайдера */
+.slider_counter{
+  margin: auto;
+  width: 500px;
+  height: 50px;
+}
+/* информационный интерфейс слайдера */
+.counter_item{
+  text-align: center;
+  padding-top: 10px;
+  /* border: 3px solid #e20f0f; */
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style:oblique;
+ color: rgb(70, 11, 235);
+ text-shadow: 2px 4px 8px rgb(70, 11, 235);
+}

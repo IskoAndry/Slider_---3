@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8">
+  <title>слайдер</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+	<div class="slider">
+<!-- 1 слайд -->
+		<div class="slider_item">
+		  <img src="img/field.jpg">
+		</div>
+<!-- 2 слайд -->
+		<div class="slider_item">
+		  <img src="img/leaf.jpg">
+		</div>
+<!-- 3 слайд -->
+		<div class="slider_item">
+		  <img src="img/middle.jpg">
+		</div>
+<!-- 4 слайд -->
+		<div class="slider_item">
+			<img src="img/moun.jpg">
+		</div>
+<!-- 5 слайд -->
+		<div class="slider_item">
+			<img src="img/nature.jpg">
+		</div>
+<!-- Кнопки-стрелочки -->
+		<a class="slider_previous" onclick="prevSlider()">&#10094;</a>
+		<a class="slider_next" onclick="nextSlider()">&#10095;</a>
+	</div>
+<!-- счетчик изображений -->
+		<div id="counter" class="counter_item">Изображение 1 из 5</div>
+</main>
+  <script src="scripts.js"></script>
+</body>
+</html>
